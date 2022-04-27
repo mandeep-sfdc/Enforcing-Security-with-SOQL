@@ -1,4 +1,4 @@
-**Enforcing Security with SOQL
+**Enforcing Field Security with SOQL
 
 When you attempt to access data in Apex through a SOQL query, you can query all fields on all objects because Apex runs in system context. So during code execution, the current user's permissions, field-level security, and sharing rules aren’t taken into account.
 
