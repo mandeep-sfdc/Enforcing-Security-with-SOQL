@@ -8,7 +8,7 @@ public with sharing class getContacts{
 
     @AuraEnabled (cacheable=true)
     public static list<Contact> getAllContactsSecurityEnforced()
-    {
+    { 
         List<Contact> Conlist = [SELECT Id, FirstName, LastName, Email FROM Contact 
                                     WITH SECURITY_ENFORCED LIMIT 5];
         return Conlist;
