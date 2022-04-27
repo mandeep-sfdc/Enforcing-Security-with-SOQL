@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="SOQL WITH SECURITY ENFORCED" icon-name="custom:custom63">
+        <div style="height: 500px;">
+            <template if:true={contactList}>
+                <lightning-datatable
+                    hide-checkbox-column
+                    key-field="id"
+                    data={contactList}
+                    columns={columns}>
+                </lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+</template>
